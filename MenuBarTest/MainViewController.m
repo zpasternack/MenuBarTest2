@@ -57,13 +57,15 @@
 	self.imageView.image = [[NSWorkspace sharedWorkspace] iconForFile:NSHomeDirectory()];
 	self.showingIcon = YES;
 	
-	// HACK
+#if 0
+	// HACK to try to make this work.
 	self.titleLabel.drawsBackground = YES;
 	self.titleLabel.backgroundColor = [NSColor clearColor];
 //	self.titleLabel.textColor = [NSColor textColor];
 	self.descriptionLabel.drawsBackground = YES;
 	self.descriptionLabel.backgroundColor = [NSColor clearColor];
 	self.descriptionLabel.textColor = [NSColor textColor];
+#endif
 }
 
 
